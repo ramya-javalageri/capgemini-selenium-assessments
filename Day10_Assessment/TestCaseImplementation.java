@@ -45,13 +45,7 @@ public class SauceDemoImplementation extends SaucedemoBaseClass {
 	
 	@Test
 	public void oderPalcementTest() throws InterruptedException, IOException
-	{
-		HomePage homePage = new HomePage(driver);
-		CartPage cartPage = new CartPage(driver);
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
-		CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);
-		checkoutCompletePage checkoutCompletePage = new checkoutCompletePage(driver);
-		data();
+	{	
 		Thread.sleep(1000);
 		homePage.verifyProductPage(productPage);
 		Thread.sleep(1000);
